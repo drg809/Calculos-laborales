@@ -1,0 +1,38 @@
+<HTML>
+	<HEAD>
+     <title>C&aacute;lculo del desempleo</title>
+	 <link rel="stylesheet" type="text/css" href="estilo.css"> 
+	</HEAD>
+	<BODY bgcolor="#56fs34">
+	 <center><h2>C&aacute;lculo del desempleo</h2></P><br><br><br>
+	  
+	    <form name="desempleo" method="POST" action="desempleo.php">
+
+		<table align="center">
+		 <tr>
+		  <td><b>Base reg. 6 meses:</b></td>
+		  <td><input type="text" name="base"></td>
+		 </tr>
+		 <tr>
+		  <td><b>Total dias cotizados: </b></td>
+		  <td><input type="text" name="dias" ></td>
+		 </tr>
+		 <tr>
+		  <td><b>N&uacute;mero de hijos: </b></td>
+		  <td><input type="text" name="hijos" ></td>
+		 </tr>
+		 <tr>
+		  <td><b>IPREM 2013: </b></td>
+		  <td>6390,13</td>
+		 </tr>
+		</table>
+      <p><input type="submit" name="calcular" value="Calcular">&nbsp;&nbsp;<input name="reset" type="reset" value="Limpiar Datos"/></p><br>
+      <center><input type="button" style="width:90; height:30" value="Volver" onClick="javascript:history.go(-1);"></center><p> 
+	</div>
+   </form>
+	  
+	 
+	  </center>
+	 </div>  
+  </BODY>
+</HTML>

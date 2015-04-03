@@ -1,0 +1,51 @@
+<HTML>
+	<HEAD>
+     <title>despido</title>
+	 <link rel="stylesheet" type="text/css" href="estilo.css"> 
+	</HEAD>
+	<BODY bgcolor="#56fs34">
+	  <center><input type="button" style="width:90; height:30" value="Volver" onClick="javascript:history.go(-1);"></center><p> 
+	    <form name="desempleo" method="POST" action="despido.php">
+				
+		<table align="center">
+		 <tr>
+    	  <td>
+			<b>Despido improcedente:</b><input type="radio" name="tipo" value="impro" id="impro"/></br>
+			<b>Despido procedente:</b><input type="radio" name="tipo" value="proced" id="proced"/></br>
+			<b>Despido por causas económicas:</b><input type="radio" name="tipo" value="econom" id="econom"/></br>
+		  </td>			
+     	  </tr>
+		  <tr>
+			<td><b>Cuant&iacute;a del salario base:</b></td>
+			<td><input type="text" name="salario" id="salario" size="10"></td>
+			</tr>
+			
+		  <tr>
+			<td><b>N&uacute;mero de pagas extras:</b></td>
+			<td><input type="text" name="numpg" id="numpg" size="10"></td>
+		  </tr>
+			
+			<tr>
+			<td><b>Cuant&iacute;a de las pagas:</b></td>
+			<td><input type="text" name="paga" id="paga" size="10"></td>
+			<td>
+			</tr>
+		  <tr>
+			<td><b>Cuant&iacute;a de plus mensual:</b></td>
+			<td><input type="text" name="plusm" id="plusm" size="10"></td>
+   	      </tr>
+    	  <tr>
+			<td><b>Inicio del Contrato:</b></td>
+			<td><input type="text" name="finicio" id="finicio" size="10"></td>
+   		  </tr>
+  		  <tr>
+			<td><b>Fin del Contrato:</b></td>
+			<td><input type="text" name="ffinal" id="ffinal" size="10"></td>
+		  </tr>
+		</table>
+		
+		<p><center><input type="submit" name="calcular" value="Calcular">&nbsp;&nbsp;<input name="reset" type="reset" value="Limpiar Datos"/></p><br></center>
+      </form>
+    </center>
+  </BODY>
+</HTML>
